@@ -11,7 +11,7 @@ resource "aws_subnet" "example_public_subnet_1" {
 
 resource "aws_subnet" "example_public_subnet_2" {
   vpc_id                  = aws_vpc.example_vpc.id
-  cidr_block              = var.availability_zone_public_subnet_2
+  cidr_block              = var.cidr_block_public_subnet_2
   map_public_ip_on_launch = var.map_public_ip_on_launch
   availability_zone       = var.availability_zone_public_subnet_2
 
